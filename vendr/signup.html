@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	
+	<meta charset="utf-8">
+	<title>SpotVendr :: Your one stop spot for parking</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Styles -->
+	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+	<link href="../css/styles.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body onload="initialize()">
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="brand nav-link" href="/"><img src="../imgs/logo-light.png" class="logo-nav"></a>
+				<div class="nav-collapse collapse pull-right">
+					<ul class="nav"> 
+						<li><a href="/demo.html#top" class="landing nav-link active">Find a Spot</a></li>
+						<li><a href="/demo.html#features" class="features nav-link">Features</a></li>
+						<li><a href="/demo.html#about" class="about nav-link">About</a></li>
+						<li><a href="/demo.html#contact" class="contact nav-link">Contact</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<b class="caret"></b></a>
+							<ul class="dropdown-menu clearfix">
+								<form class="form-inline" name="login-form" id="login-form">
+									<input class="input-large border-orange" type="email" name="emailLogin" id="emailLogin" placeholder="Email" autocomplete="off" autofocus required>
+
+									<input class="input-medium border-orange" type="password" name="passwordLogin" id="passwordLogin" placeholder="Password" autocomplete="off" required>
+
+									<button onClick="vendrSignUp()" class="btn-large" id="logIn" name="logIn">Login</button>
+								</form><!-- /signup-form -->
+								<button class="btn"><a href="/vendr/signup.html">New Vendr?</a></button>&nbsp;&nbsp;&nbsp;<button class="btn">New Rentr?</a>
+							</ul>
+						</li>
+					</ul>
+				</div><!--/nav-collapse -->
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<!-- Vendr Signup -->
+		<div class="row" id="vendr-signup">
+			<div class="span6">
+				<div id="vendr-signup-wrapper">
+					<h1 class="font-orange">Vendr Signup</h1>
+						<input class="input-block-level" type="text" name="firstNameVendr" id="firstNameVendr" placeholder="First" autocomplete="off" required>
+
+						<input class="input-block-level" type="text" name="lastNameVendr" id="lastNameVendr" placeholder="Last" autocomplete="off" required>
+
+						<input class="input-block-level" type="text" name="phoneVendr" id="phoneVendr" placeholder="Phone Number" autocomplete="off">
+
+						<input class="input-block-level" type="email" name="emailVendr" id="emailVendr" placeholder="Email Address" autocomplete="off" required>
+
+						<input class="input-block-level" type="text" name="businessNameVendr" id="businessNameVendr" placeholder="Business Name" autocomplete="off">
+
+						<input class="input-block-level" type="text" name="typeVendr" id="typeVendr" placeholder="Type*" autocomplete="off" required>
+
+						<input class="input-block-level" type="text" name="streetVendr" id="streetVendr" placeholder="Street" autocomplete="off" required>
+						<input class="input-block-level" type="text" name="cityVendr" id="cityVendr" placeholder="City" autocomplete="off" required>
+						<input class="input-block-level" type="text" name="stateVendr" id="stateVendr" placeholder="State" autocomplete="off" required>
+						<input class="input-block-level" type="text" name="zipVendr" id="zipVendr" placeholder="Zip" autocomplete="off" required>
+
+						<input class="input-block-level" type="text" name="spotsVendr" id="spotsVendr" placeholder="Potential Number of Spots" autocomplete="off" required>
+
+						<input type="checkbox">Sign up for Newsletter?
+
+						<button type="submit" class="btn-large btn-block" name="sendVendr" id="sendVendr">Send</button>
+				</div><!-- /vendr-signup-wrapper -->
+			</div><!-- /span12 -->
+		</div><!-- /row -->
+		<!-- /vendr-signup -->
+
+
+		<!-- Footer -->
+		<footer>
+			<p class="pull-right"><a href="#">Back to top</a></p>
+			<p>&copy; 2013 SpotVendr &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+		</footer>
+		<!-- /footer -->
+
+
+	</div> <!-- /container -->
+
+	<!-- Javascript-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+
+	<script src="../bootstrap/js/bootstrap-transition.js"></script>
+	<script src="../bootstrap/js/bootstrap-alert.js"></script>
+	<script src="../bootstrap/js/bootstrap-modal.js"></script>
+	<script src="../bootstrap/js/bootstrap-dropdown.js"></script>
+	<script src="../bootstrap/js/bootstrap-scrollspy.js"></script>
+	<script src="../bootstrap/js/bootstrap-tab.js"></script>
+	<script src="../bootstrap/js/bootstrap-tooltip.js"></script>
+	<script src="../bootstrap/js/bootstrap-popover.js"></script>
+	<script src="../bootstrap/js/bootstrap-button.js"></script>
+	<script src="../bootstrap/js/bootstrap-collapse.js"></script>
+	<script src="../bootstrap/js/bootstrap-carousel.js"></script>
+	<script src="../bootstrap/js/bootstrap-typeahead.js"></script>
+
+	<script src="../js/functions.js"></script>
+
+	<script type="text/javascript">var switchTo5x=true;</script>
+	<script src="http://www.parsecdn.com/js/parse-1.2.3.min.js"></script>
+	<script src="../js/parse.js"></script>
+  </body>
+</html>

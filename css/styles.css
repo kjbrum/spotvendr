@@ -1,0 +1,388 @@
+#projects {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+
+/*****************************************************************/
+/************************* General Styles ************************/
+/*****************************************************************/
+html {
+	overflow-y: scroll;
+	overflow-x: hidden;
+
+	background: url(../imgs/hilton.jpg) no-repeat center center fixed, #222; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+body {
+	color: #FFFFFF;
+	font-family: 'Ubuntu', Arial;
+	background-color: transparent;
+}
+
+h1 {
+	font-size: 50px;
+	margin-bottom: 30px;
+}
+
+a {
+	color: #F6921E;
+	outline: transparent;
+}
+
+a:hover {
+	color: #F5AA53;
+}
+
+.row {
+	padding-top: 100px;
+	margin-bottom: 500px;
+}
+
+.font-orange {
+	color: #F6921E !important;
+}
+
+.border-orange {
+	border: 1px solid #F6921E !important;
+}
+
+.background-orange {
+	background-color: #F6921E !important;
+}
+
+#top {
+	position: absolute;
+	top: 0;
+}
+
+li {
+	line-height: 50px;
+}
+
+select, textarea, input[type="text"], input[type="password"],
+input[type="datetime"], input[type="datetime-local"], input[type="date"],
+input[type="month"], input[type="time"], input[type="week"],
+input[type="number"], input[type="email"], input[type="url"],
+input[type="search"], input[type="tel"], input[type="color"],
+.btn, .btn-small, .btn-medium, .btn-large {
+	border-radius: 0;
+}
+
+:-moz-placeholder { padding: 5px;}
+::-moz-placeholder { padding: 5px; }
+:-ms-input-placeholder { padding: 5px; }
+::-webkit-input-placeholder { padding: 5px; }
+
+
+
+/************************************************************/
+/************************* Scrollbar ************************/
+/************************************************************/
+::-webkit-scrollbar {
+	width: 15px;
+	background: #FFFFFF;
+}
+::-webkit-scrollbar-button {
+}
+::-webkit-scrollbar-track {
+	background: #333333;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.8);
+}
+::-webkit-scrollbar-track-piece {
+}
+::-webkit-scrollbar-thumb {
+	background: #F6921E;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: #FCB058;
+}
+::-webkit-scrollbar-corner {
+}
+::-webkit-resizer {
+}
+
+
+
+/****************************************************************/
+/************************* Navbar Styles ************************/
+/****************************************************************/
+.logo-nav {
+	height: 50px;
+}
+
+.navbar-inverse .navbar-inner {
+	background-image: none;
+	background-color: #333333;
+	border: none;
+}
+
+.navbar-inverse .nav > li > a {
+	font-size: 20px;
+	color: #868181;
+	border-color: none;
+
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.navbar-inverse .nav > li > a.active {
+	color: #F6921E;
+}
+
+.navbar-inverse .nav > li > a.current {
+	color: #FFFFFF;
+}
+
+.navbar-inverse .nav > li > a:hover {
+	color: #F6921E;
+}
+
+/********** Login Form **********/
+.dropdown-menu button {
+	border: transparent;
+	color: #FFFFFF;
+	background-color: #F6921E;
+	background-image: -webkit-linear-gradient(top, #FBB450, #F6921E);
+	background-image: -moz-linear-gradient(top, #FBB450, #F6921E);
+	background-image: -ms-linear-gradient(top, #FBB450, #F6921E);
+	background-image: -o-linear-gradient(top, #FBB450, #F6921E);
+	background-image: linear-gradient(top, #FBB450, #F6921E);
+}
+
+.dropdown-menu button:hover {
+	color: #FFFFFF;
+	background-color: #F6921E;
+	background-image: -webkit-linear-gradient(top, #DE9F47, #E6881C);
+	background-image: -moz-linear-gradient(top, #DE9F47, #E6881C);
+	background-image: -o-linear-gradient(top, #DE9F47, #E6881C);
+	background-image: -ms-linear-gradient(top, #DE9F47, #E6881C);
+	background-image: linear-gradient(top, #DE9F47, #E6881C);
+}
+
+.dropdown-menu input {
+	height: 30px;
+	font-size: 20px;
+	color: #333333;
+	outline: #F6921E;
+}
+
+.navbar-inverse .nav li.dropdown.open>.dropdown-toggle {
+	background-color: #FFFFFF;
+	color: #F6921E;
+}
+
+.navbar .nav .dropdown-toggle .caret {
+	margin-top: 25px;
+}
+
+.navbar-inverse .nav li.dropdown.open>.dropdown-toggle .caret {
+	border-top-color: #F6921E;
+	border-bottom-color: #F6921E;
+}
+
+.navbar-inverse .nav .dropdown-menu {
+	width: 480px;
+	left: auto;
+	right: 0;
+	border-radius: 0;
+	padding: 10px;
+	margin-top: 8px;
+}
+
+.navbar-inverse .nav .dropdown-menu form {
+	margin: 0;
+}
+
+.navbar-inverse .nav > li > .dropdown-menu:before,
+.navbar-inverse .nav > li > .dropdown-menu:after {
+	left: auto;
+	right: 48px;
+}
+
+.dropdown-menu :-moz-placeholder { padding: 2px;}
+.dropdown-menu ::-moz-placeholder { padding: 2px; }
+.dropdown-menu :-ms-input-placeholder { padding: 2px; }
+.dropdown-menu ::-webkit-input-placeholder { padding: 2px; }
+
+
+
+/**********************************************************************/
+/************************* Landing Page Styles ************************/
+/**********************************************************************/
+#landing .span12 {
+	margin-bottom: 50px;
+}
+
+#logo-landing {
+	width: 50%;
+	margin: 0 auto;
+}
+
+/********** Signup Form **********/
+#signup-thank-you {
+	display: none;
+}
+
+#signup-thank-you h2 {
+	margin-top: 0;
+}
+
+.help-block {
+	color: #FFFFFF;
+	font-style: italic;
+}
+
+.signup-info {
+	font-size: 22px;
+	line-height: 30px;
+}
+
+button {
+	border: transparent;
+	color: #FFFFFF;
+	background-color: #F6921E;
+	background-image: -webkit-linear-gradient(top, #FBB450, #F6921E);
+	background-image: -moz-linear-gradient(top, #FBB450, #F6921E);
+	background-image: -ms-linear-gradient(top, #FBB450, #F6921E);
+	background-image: -o-linear-gradient(top, #FBB450, #F6921E);
+	background-image: linear-gradient(top, #FBB450, #F6921E);
+}
+
+button:hover {
+	background-color: #F6921E;
+	background-image: -webkit-linear-gradient(top, #DE9F47, #E6881C);
+	background-image: -moz-linear-gradient(top, #DE9F47, #E6881C);
+	background-image: -o-linear-gradient(top, #DE9F47, #E6881C);
+	background-image: -ms-linear-gradient(top, #DE9F47, #E6881C);
+	background-image: linear-gradient(top, #DE9F47, #E6881C);
+}
+
+#signup-form-wrapper input {
+	height: 40px;
+	font-size: 25px;
+	color: #333333;
+	outline: #F6921E;
+	border: transparent;
+}
+
+#signup-form-wrapper #emailAll {
+	width: 97%;
+}
+
+#signup-form-wrapper #firstNameAll,
+#signup-form-wrapper #lastNameAll {
+	width: 47%;
+}
+
+
+
+/***************************************************************/
+/************************* About Styles ************************/
+/***************************************************************/
+#about img {
+	position: relative;
+	left: 50%;
+	margin-left: -470px;
+}
+
+
+
+/******************************************************************/
+/************************* Features Styles ************************/
+/******************************************************************/
+.feature-divider {
+	border: 1px solid #868181;
+}
+
+.vendrs {
+	text-align: right;
+}
+
+.rentrs {
+	text-align: left;
+}
+
+.vendrs h1 {
+	text-align: left;
+}
+
+#features img {
+	padding: 5px;
+}
+
+
+
+/*****************************************************************/
+/************************* Contact Styles ************************/
+/*****************************************************************/
+:-moz-placeholder span { color: #F6921E ; }
+::-moz-placeholder span { color: #F6921E ; }
+:-ms-input-placeholder span { color: #F6921E ; }
+::-webkit-input-placeholder span { color: #F6921E ; }
+
+#contact-form-wrapper input {
+	height: 40px;
+	font-size: 25px;
+	color: #333333;
+	outline: #F6921E;
+	border: transparent;
+}
+
+#contact-form-wrapper textarea {
+	font-size: 25px;
+	line-height: 26px;
+	padding: 4px 6px;
+	color: #333333;
+	outline: #F6921E;
+	border: transparent;
+	resize: none;
+}
+
+#contact h2 {
+	text-align: right;
+}
+
+address {
+	font-size: 25px;
+	line-height: 26px;
+}
+
+#contact-thank-you {
+	display: none;
+}
+
+
+
+/********************************************************************/
+/************************* Vendr Signup Form ************************/
+/********************************************************************/
+#vendr-signup .span6 {
+	margin: 0 auto;
+	float: none;
+}
+
+#vendr-signup-wrapper input {
+	height: 40px;
+	font-size: 25px;
+	color: #333333;
+	outline: #F6921E;
+	border: transparent;
+}
+
+#vendr-signup-wrapper textarea {
+	font-size: 25px;
+	line-height: 26px;
+	padding: 4px 6px;
+	color: #333333;
+	outline: #F6921E;
+	border: transparent;
+	resize: none;
+}
