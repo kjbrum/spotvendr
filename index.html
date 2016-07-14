@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	
+
 	<meta charset="utf-8">
 	<title>SpotVendr :: Your one stop spot for parking</title>
-	
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- Styles -->
-	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
+	<link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="./bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+	<link href="./css/styles.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
   </head>
 
@@ -37,9 +37,9 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="brand nav-link" href="#top"><img src="imgs/logo-light.png" class="logo-nav" /></a>
+				<a class="brand nav-link" href="#top"><img src="./imgs/logo-light.png" class="logo-nav" /></a>
 				<div class="nav-collapse collapse pull-right">
-					<ul class="nav"> 
+					<ul class="nav">
 						<li><a href="#top" class="landing nav-link active">Find a Spot</a></li>
 						<li><a href="#features" class="features nav-link">Features</a></li>
 						<li><a href="#about" class="about nav-link">About</a></li>
@@ -52,7 +52,7 @@
 								<input class="input-medium border-orange" type="password" name="passwordLogin" id="passwordLogin" placeholder="Password" autocomplete="off" required />
 
 								<button onClick="login()" class="btn-large" id="logIn" name="logIn" />Login</button>
-								<button class="btn"><a href="/vendr/signup.html">New Vendr?</a></button>&nbsp;&nbsp;&nbsp;<button class="btn">New Rentr?</a>
+								<button class="btn"><a href="./vendr/signup.html">New Vendr?</a></button>&nbsp;&nbsp;&nbsp;<button class="btn">New Rentr?</a>
 							</ul>
 						</li>
 					</ul>
@@ -66,7 +66,7 @@
 		<!-- Landing Page -->
 		<div class="row" id="landing">
 			<div class="span12">
-				<img src="imgs/logo-tagline-light.png" class="logo-landing" />
+				<img src="./imgs/logo-tagline-light.png" class="logo-landing" />
 			</div><!-- /span12 -->
 
 			<div class="span6 signup-info">
@@ -107,7 +107,7 @@
 				<hr class="feature-divider border-orange">
 
 				<div class="clearfix">
-					<img class="pull-left" src="imgs/features/ease.png">
+					<img class="pull-left" src="./imgs/features/ease.png">
 					<h3 class="feature-heading">Ease of Use</h3>
 					<p class="lead">Get paid upfront by rentrs &mdash; no need to be available for the cash transaction the day of.
 						Remove the annoying hassle of collecting cash.</p>
@@ -115,7 +115,7 @@
 				<hr class="feature-divider">
 
 				<div class="clearfix">
-					<img class="pull-left" src="imgs/features/price.png">
+					<img class="pull-left" src="./imgs/features/price.png">
 					<h3 class="feature-heading">Choose Your Price</h3>
 					<p class="lead">Set the price that you would like or let our rentrs bid on your premium spots till their hearts content.</p>
 				</div><!-- /clearfix -->
@@ -123,7 +123,7 @@
 				<hr class="feature-divider">
 
 				<div class="clearfix">
-					<img class="pull-left" src="imgs/features/security.png">
+					<img class="pull-left" src="./imgs/features/security.png">
 					<h3 class="feature-heading">Security</h3>
 					<p class="lead">Ensure your available spots are filled by rentrs who want that premium parking spot.
 						Feel safe knowing that you are insured and guaranteed satisfaction.</p>
@@ -136,7 +136,7 @@
 				<hr class="feature-divider border-orange">
 
 				<div class="clearfix">
-					<img class="pull-right" src="imgs/features/convenience.png">
+					<img class="pull-right" src="./imgs/features/convenience.png">
 					<h3 class="feature-heading">Convenience</h3>
 					<p class="lead">Plan your parking ahead of time and skip all the hassle of trying to find that perfect spot only minutes before your event is about to start.</p>
 				</div><!-- /clearfix -->
@@ -144,7 +144,7 @@
 				<hr class="feature-divider">
 
 				<div class="clearfix">
-					<img class="pull-right" src="imgs/features/location.png">
+					<img class="pull-right" src="./imgs/features/location.png">
 					<h3 class="feature-heading">Location</h3>
 					<p class="lead">Choose from a selection of vendrs in multiple locations, to spot the perfect parking space to fit your budget and keep you within range of your event.</p>
 				</div><!-- /clearfix -->
@@ -152,7 +152,7 @@
 				<hr class="feature-divider">
 
 				<div class="clearfix">
-					<img class="pull-right" src="imgs/features/safety.png">
+					<img class="pull-right" src="./imgs/features/safety.png">
 					<h3 class="feature-heading">Safety</h3>
 					<p class="lead">Park on credible vendr properties and ensure that you have a place to securely leave your vehicle while you are out enjoying yourself.</p>
 				</div><!-- /clearfix -->
@@ -165,7 +165,7 @@
 		<div class="row" id="about">
 			<h1 class="font-orange">The Team</h1>
 			<div class="span12">
-				<img src="imgs/spotvendr-team.jpg" />
+				<img src="./imgs/spotvendr-team.jpg" />
 			</div><!-- /span12 -->
 			<div class="span3 offset2">
 				<h2>Kyle</h2>
@@ -199,7 +199,7 @@
 		<div class="row" id="contact">
 			<div class="span6">
 				<h1 class="font-orange">Get ahold of us</h1>
-				<div id="contact-form-wrapper">	
+				<div id="contact-form-wrapper">
 					<input class="input-block-level" type="text" name="fullNameContact" id="fullNameContact" placeholder="Full Name*" autocomplete="off" required />
 
 					<input class="input-block-level" type="email" name="emailContact" id="emailContact" placeholder="Email Address*" class="input-xlarge" autocomplete="off" required />
@@ -213,7 +213,7 @@
 
 				<div id ="contact-thank-you">
 					<h3 class="font-orange">Thank you!</h3>
-					<h3>We have received your email and we will be in touch with you soon.</h3> 
+					<h3>We have received your email and we will be in touch with you soon.</h3>
 				</div><!-- /contact-thank-you -->
 
 			</div><!-- /span6 -->
@@ -258,27 +258,27 @@
 	<!-- Javascript-->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
 
-	<script src="bootstrap/js/bootstrap-transition.js"></script>
-	<script src="bootstrap/js/bootstrap-alert.js"></script>
-	<script src="bootstrap/js/bootstrap-modal.js"></script>
-	<script src="bootstrap/js/bootstrap-dropdown.js"></script>
-	<script src="bootstrap/js/bootstrap-scrollspy.js"></script>
-	<script src="bootstrap/js/bootstrap-tab.js"></script>
-	<script src="bootstrap/js/bootstrap-tooltip.js"></script>
-	<script src="bootstrap/js/bootstrap-popover.js"></script>
-	<script src="bootstrap/js/bootstrap-button.js"></script>
-	<script src="bootstrap/js/bootstrap-collapse.js"></script>
-	<script src="bootstrap/js/bootstrap-carousel.js"></script>
-	<script src="bootstrap/js/bootstrap-typeahead.js"></script>
+	<script src="./bootstrap/js/bootstrap-transition.js"></script>
+	<script src="./bootstrap/js/bootstrap-alert.js"></script>
+	<script src="./bootstrap/js/bootstrap-modal.js"></script>
+	<script src="./bootstrap/js/bootstrap-dropdown.js"></script>
+	<script src="./bootstrap/js/bootstrap-scrollspy.js"></script>
+	<script src="./bootstrap/js/bootstrap-tab.js"></script>
+	<script src="./bootstrap/js/bootstrap-tooltip.js"></script>
+	<script src="./bootstrap/js/bootstrap-popover.js"></script>
+	<script src="./bootstrap/js/bootstrap-button.js"></script>
+	<script src="./bootstrap/js/bootstrap-collapse.js"></script>
+	<script src="./bootstrap/js/bootstrap-carousel.js"></script>
+	<script src="./bootstrap/js/bootstrap-typeahead.js"></script>
 
-	<script src="js/functions.js"></script>
+	<script src="./js/functions.js"></script>
 
 	<script type="text/javascript">var switchTo5x=true;</script>
 	<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
 	<script type="text/javascript">stLight.options({publisher: "3fa2eb31-fec9-4151-9b16-d1625c966173", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 	<script src="http://www.parsecdn.com/js/parse-1.2.3.min.js"></script>
-	<script src="js/parse.js"></script>
+	<script src="./js/parse.js"></script>
   </body>
 </html>
